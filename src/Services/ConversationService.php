@@ -144,7 +144,7 @@ class ConversationService
      */
     public function unreadCount()
     {
-        return $this->conversation->unReadNotifications($this->participant)->count();
+        return $this->conversation->unReadNotificationsQuery($this->participant)->count();
     }
 
     /**
